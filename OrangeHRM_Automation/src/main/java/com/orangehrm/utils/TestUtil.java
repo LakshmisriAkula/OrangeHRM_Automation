@@ -19,7 +19,7 @@ public class TestUtil extends TestBase {
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
 
-	public static String TESTDATA_SHEET_PATH = "E:\\StarAgile Capstone Projects\\StarAgileCapstoneProjects\\OrangeHRM_Automation\\src\\main\\java\\com\\orangehrm\\testdata\\LoginData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "E:\\StarAgile - OrangeHRM_Automation\\OrangeHRM_Automation\\OrangeHRM_Automation\\src\\main\\java\\com\\orangehrm\\testdata\\LoginData.xlsx";
 
 	static XSSFWorkbook book;
 	static XSSFSheet sheet;

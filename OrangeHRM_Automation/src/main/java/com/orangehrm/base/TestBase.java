@@ -21,13 +21,12 @@ public class TestBase {
 	public static Properties prop;
 	public static ExtentTest logger;
 
-
 	public TestBase() {
 
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"E:\\StarAgile Capstone Projects\\StarAgileCapstoneProjects\\OrangeHRM_Automation\\src\\main\\java\\com\\orangehrm\\config\\config.properties");
+					"E:\\StarAgile - OrangeHRM_Automation\\OrangeHRM_Automation\\OrangeHRM_Automation\\src\\main\\java\\com\\orangehrm\\config\\config.properties");
 			try {
 				prop.load(ip);
 			} catch (IOException e) {
@@ -64,7 +63,7 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 
 	}
-	
+
 	protected void logWithScreenshot(String message) {
 		String path = ScreenshotUtil.captureScreenshot(driver, message.replace(" ", "_"));
 		if (logger != null) {
@@ -73,7 +72,6 @@ public class TestBase {
 			System.out.println("⚠️ Logger is null. Screenshot taken: " + path);
 		}
 	}
-
 
 	@AfterMethod
 

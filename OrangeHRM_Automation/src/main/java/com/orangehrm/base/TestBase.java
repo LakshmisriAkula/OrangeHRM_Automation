@@ -25,8 +25,7 @@ public class TestBase {
 
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					"E:\\StarAgile - OrangeHRM_Automation\\OrangeHRM_Automation\\OrangeHRM_Automation\\src\\main\\java\\com\\orangehrm\\config\\config.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/orangehrm/config/config.properties");
 			try {
 				prop.load(ip);
 			} catch (IOException e) {

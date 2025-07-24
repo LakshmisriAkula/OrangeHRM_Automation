@@ -13,7 +13,7 @@ import com.orangehrm.utils.TestUtil;
 
 @Listeners(com.orangehrm.extentreportlistener.ExtentTestListener.class)
 public class LoginTests extends TestBase {
-	LoginPage login;
+	LoginPage loginPage;
 	ExtentReports report;
 	ExtentTest test;
 	String sheetName = "Logindata";
@@ -21,19 +21,19 @@ public class LoginTests extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		initialization();
-		login = new LoginPage(driver);
+		loginPage = new LoginPage(driver);
 	}
 
 	@Test(dataProvider = "LoginData")
 	public void loginTestCases(String username, String password) {
 
-		login.login(username, password);
-
+		loginPage.login(username, password);
+		
 		Assert.assertTrue(LoginPage.profile.isDisplayed());
 		
-        logWithScreenshot("Login Successful");
+        logWithScreenshot("Dashboard page captured successfully"); // if test fails capturing the screenshot in ExtentTestListener
 		
-		login.logout();
+        loginPage.logout();
 
 	}
 

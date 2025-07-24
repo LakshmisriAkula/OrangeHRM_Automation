@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.orangehrm.extentreportlistener.ExtentTestListener"/>
   </listeners>
-  <test thread-count="5" name="Login and Admin Module Tests(failed)">
+  <test thread-count="5" name="Login and Admin Tests(failed)">
     <classes>
       <class name="com.orangehrm.testCases.LoginTests">
         <methods>
@@ -14,5 +14,5 @@
         </methods>
       </class> <!-- com.orangehrm.testCases.LoginTests -->
     </classes>
-  </test> <!-- Login and Admin Module Tests(failed) -->
+  </test> <!-- Login and Admin Tests(failed) -->
 </suite> <!-- Failed suite [OrangeHRM Suite] -->

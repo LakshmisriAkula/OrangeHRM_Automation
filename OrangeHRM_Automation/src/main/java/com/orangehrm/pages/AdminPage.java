@@ -67,6 +67,7 @@ public class AdminPage {
 
 	public int searchByUserStatus(String status) throws InterruptedException {
 		userStatusDropdown.click();
+		
 		WebElement statusOption = wait.until(ExpectedConditions
 				.visibilityOfElementLocated(By.xpath("//div[@role='option']/span[text()='" + status + "']")));
 		statusOption.click();
@@ -76,4 +77,15 @@ public class AdminPage {
 		return resultRows.size();
 	}
 
+	public int getDisplayedRecordCountFromText() {
+		String recordsText = driver
+				.findElement(By.xpath("//div[@class='orangehrm-horizontal-padding orangehrm-vertical-padding']/span"))
+				.getText();
+		String[] split = recordsText.split("[()]");
+		return Integer.parseInt(split[1]);
+	}
+
+	public void refreshPage() {
+		driver.navigate().refresh();
+	}
 }

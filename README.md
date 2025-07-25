@@ -42,7 +42,7 @@ Automate the following modules of the OrangeHRM application:
 │   └── testng.xml     # TestNG configuration
 ├── reports/           # ExtentReports output
 ├── screenshots/       # Captured screenshots
-└── README.md ```
+└── README.md  ```
 
 ## 🚀 How to Run the Tests
 

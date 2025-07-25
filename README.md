@@ -33,17 +33,7 @@ Automate the following modules of the OrangeHRM application:
 - **IDE**: Eclipse / IntelliJ
 
 
-## 📂 Project Structure
-
-OrangeHRM_Automation/
-├── src/
-│ ├── pages/ # POM classes for each module
-│ ├── testcases/ # Test classes
-│ ├── utilities/ # Excel, Screenshot, Report Utils
-│ └── testng.xml # TestNG configuration
-├── reports/ # ExtentReports output
-├── screenshots/ # Captured screenshots
-└── README.md
+<pre> ## 📂 Project Structure ``` OrangeHRM_Automation/ ├── src/ │ ├── pages/ # POM classes for each module │ ├── testcases/ # Test classes │ ├── utilities/ # Excel, Screenshot, Report Utils │ └── testng.xml # TestNG configuration ├── reports/ # ExtentReports output ├── screenshots/ # Captured screenshots └── README.md ``` </pre>
 
 ## 🚀 How to Run the Tests
 

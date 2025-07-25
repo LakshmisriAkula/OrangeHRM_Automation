@@ -36,14 +36,13 @@ Automate the following modules of the OrangeHRM application:
 ## 🧩 Project Structure
 
 OrangeHRM_Automation/
-│
 ├── src/
-│   ├── pages/              # POM classes for each module
-│   ├── testcases/          # Test classes
-│   ├── utilities/          # Excel, Screenshot, Report Utils
-│   └── testng.xml          # TestNG configuration
-├── reports/                # ExtentReports output
-├── screenshots/            # Captured screenshots
+│ ├── pages/     # POM classes for each module
+│ ├── testcases/ # Test classes
+│ ├── utilities/ # Excel, Screenshot, Report Utils
+│ └── testng.xml # TestNG configuration
+├── reports/ # ExtentReports output
+├── screenshots/ # Captured screenshots
 └── README.md
 
 ## 🚀 How to Run the Tests

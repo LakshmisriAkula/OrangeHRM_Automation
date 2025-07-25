@@ -15,7 +15,8 @@ public class LoginPage {
 	@FindBy(css = "button[type='submit']")
 	WebElement loginButton;
 
-	public static @FindBy(xpath = "//p[@class='oxd-userdropdown-name']") WebElement profile;
+	@FindBy(xpath = "//p[@class='oxd-userdropdown-name']")
+	private WebElement profile;
 
 	@FindBy(linkText = "Logout")
 	WebElement logoutLink;
@@ -36,6 +37,10 @@ public class LoginPage {
 	public void logout() {
 		profile.click();
 		logoutLink.click();
+	}
+
+	public boolean isProfileDisplayed() {
+		return profile.isDisplayed();
 	}
 
 }

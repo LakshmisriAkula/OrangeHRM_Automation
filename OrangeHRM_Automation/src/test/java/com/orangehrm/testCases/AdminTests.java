@@ -47,6 +47,7 @@ public class AdminTests extends TestBase {
 	}
 	@Test(priority=3)
 	public void searchByUserRole() throws InterruptedException {
+		
 		adminPage.adminMenu.click();
 		
 		int result = adminPage.searchByUserRole("Admin");
@@ -62,6 +63,7 @@ public class AdminTests extends TestBase {
 
 	@Test(priority=4)
 	public void searchByStatus() throws InterruptedException {
+		
 		adminPage.adminMenu.click();
 		
 		int result = adminPage.searchByUserStatus("Enabled");

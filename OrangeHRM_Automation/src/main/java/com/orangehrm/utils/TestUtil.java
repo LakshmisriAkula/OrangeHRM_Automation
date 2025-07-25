@@ -12,14 +12,11 @@ import com.orangehrm.base.TestBase;
 
 public class TestUtil extends TestBase {
 
-	public TestUtil() throws IOException {
-		super();
-	}
-
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
 
-	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir") + "/src/main/java/com/orangehrm/testdata/LoginData.xlsx";
+	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir")
+			+ "/src/main/java/com/orangehrm/testdata/LoginData.xlsx";
 
 	static XSSFWorkbook book;
 	static XSSFSheet sheet;

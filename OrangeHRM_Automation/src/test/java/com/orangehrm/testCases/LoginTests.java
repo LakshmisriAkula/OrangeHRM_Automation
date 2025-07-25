@@ -28,12 +28,12 @@ public class LoginTests extends TestBase {
 	public void loginTestCases(String username, String password) {
 
 		loginPage.login(username, password);
-		
-		Assert.assertTrue(LoginPage.profile.isDisplayed());
-		
-        logWithScreenshot("Dashboard page captured successfully"); // if test fails capturing the screenshot in ExtentTestListener
-		
-        loginPage.logout();
+
+		Assert.assertTrue(loginPage.isProfileDisplayed(), "Profile is not displayed after login");
+
+		logWithScreenshot("Dashboard page captured successfully"); // if test fails capturing the screenshot in ExtentTestListener
+
+		loginPage.logout();
 
 	}
 

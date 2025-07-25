@@ -2,18 +2,17 @@
 
 This is a capstone project developed as part of an automation testing course. The project focuses on automating key modules of the OrangeHRM application using **Selenium WebDriver**, **TestNG**, and the **Page Object Model (POM)** framework.
 
----
 
 ## 📌 Project Objectives
 
 Automate the following modules of the OrangeHRM application:
 
 ### ✅ Module 1: Login
-- Automate login/logout using **5 different datasets** (valid & invalid).
-- Use Excel to read data.
+- Automates login/logout using **5 different datasets** (valid & invalid).
+- Reads data from Excel using Apache POI.
 - Capture screenshots for each login attempt.
-- Assert valid and invalid credentials.
-- Generate ExtentReports for test execution.
+- Asserts valid and invalid credentials.
+- Generates ExtentReports for test execution.
 
 ### ✅ Module 2: Admin → User Management
 - Search functionality automation:
@@ -22,7 +21,6 @@ Automate the following modules of the OrangeHRM application:
 - Search by **User Status**
 - Validate and print all **12 left side menu** options.
 
----
 
 ## 🛠️ Tools & Technologies Used
 
@@ -34,11 +32,9 @@ Automate the following modules of the OrangeHRM application:
 - **Utilities**: Apache POI (Excel), Screenshot Utility  
 - **IDE**: Eclipse / IntelliJ
 
----
 
 ## 🧩 Project Structure
 
-```
 OrangeHRM_Automation/
 │
 ├── src/
@@ -49,45 +45,39 @@ OrangeHRM_Automation/
 ├── reports/                # ExtentReports output
 ├── screenshots/            # Captured screenshots
 └── README.md
-```
-
----
 
 ## 🚀 How to Run the Tests
 
 ### 1. Clone the Repository
-```bash
+
 git clone https://github.com/LakshmisriAkula/OrangeHRM_Automation.git
 cd OrangeHRM_Automation
-```
+
 
 ### 2. Open in IDE (Eclipse/IntelliJ)
 
 ### 3. Install Dependencies
 Ensure Maven is installed and run:
-```bash
+
 mvn clean install
-```
+
 
 ### 4. Run Tests
 Use the TestNG XML file:
-```bash
-Right-click on testng.xml → Run As → TestNG Suite
-```
 
----
+Right-click on testng.xml → Run As → TestNG Suite
+
 
 ## 📷 Sample Output
 
 - Screenshots saved in `/screenshots`
 - Reports generated in `/reports`
 
----
 
 ## 🙋‍♀️ Author
 
 **Lakshmi Akula**  
-Automation Tester | 8+ Years QA Experience  
+Automation Tester | 8+ Years QA Experience including 4 years Selenium Automation
 [GitHub](https://github.com/LakshmisriAkula)
 
 ---

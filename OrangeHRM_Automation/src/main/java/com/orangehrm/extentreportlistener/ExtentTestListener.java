@@ -1,5 +1,9 @@
 package com.orangehrm.extentreportlistener;
 
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
@@ -8,6 +12,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.orangehrm.base.TestBase;
 import com.orangehrm.utils.ScreenshotUtil;
@@ -42,22 +47,23 @@ public class ExtentTestListener implements ITestListener, ISuiteListener {
 		test.pass("Test passed");
 	}
 
+	
 	@Override
 	public void onTestFailure(ITestResult result) {
-		test.fail("Test failed: " + result.getThrowable());
+	    test.fail("Test failed: " + result.getThrowable());
 
-		WebDriver driver = TestBase.driver;
-		String testName = result.getName();
-		String screenshotPath = ScreenshotUtil.captureScreenshot(driver, testName);
-		String base64 = ScreenshotUtil.captureBase64Screenshot(driver);
+	    WebDriver driver = TestBase.driver;
 
-		try {
-			test.fail("Failure Screenshot:").addScreenCaptureFromPath(screenshotPath)
-					.addScreenCaptureFromBase64String(base64);
-		} catch (Exception e) {
-			test.fail("Screenshot error: " + e.getMessage());
-		}
+	    String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+	    String screenshotName = result.getName() + "_" + timestamp;
+
+	    String filePath = ScreenshotUtil.captureScreenshot(driver, screenshotName);
+
+	    test.fail(MediaEntityBuilder.createScreenCaptureFromPath(filePath).build());
 	}
+
+
+	
 
 	@Override
 	public void onTestSkipped(ITestResult result) {

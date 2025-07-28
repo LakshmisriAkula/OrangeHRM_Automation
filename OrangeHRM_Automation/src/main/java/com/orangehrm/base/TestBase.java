@@ -25,7 +25,8 @@ public class TestBase {
 
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/orangehrm/config/config.properties");
+			FileInputStream ip = new FileInputStream(
+					System.getProperty("user.dir") + "/src/main/java/com/orangehrm/config/config.properties");
 			try {
 				prop.load(ip);
 			} catch (IOException e) {
@@ -63,22 +64,16 @@ public class TestBase {
 
 	}
 
-	
 	protected void logWithScreenshot(String message) {
 		String testName = message.replace(" ", "_");
 		String path = ScreenshotUtil.captureScreenshot(driver, testName);
-		String base64 = ScreenshotUtil.captureBase64Screenshot(driver);
 
 		if (logger != null) {
-			logger.log(Status.INFO, message)
-				  .addScreenCaptureFromPath(path)
-				  .addScreenCaptureFromBase64String(base64);
+			logger.log(Status.INFO, message).addScreenCaptureFromPath(path);
 		} else {
 			System.out.println("⚠️ Logger is null. Screenshot saved at: " + path);
 		}
 	}
-
-
 
 	@AfterMethod
 

@@ -1,18 +1,16 @@
 package com.orangehrm.extentreportlistener;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.*;
+import org.testng.ISuite;
+import org.testng.ISuiteListener;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
 
-import com.aventstack.extentreports.*;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.orangehrm.base.TestBase;
+import com.orangehrm.utils.ScreenshotUtil;
 
 public class ExtentTestListener implements ITestListener, ISuiteListener {
 
@@ -49,18 +47,14 @@ public class ExtentTestListener implements ITestListener, ISuiteListener {
 		test.fail("Test failed: " + result.getThrowable());
 
 		WebDriver driver = TestBase.driver;
-
-		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-		String filePath = "screenshots/" + result.getName() + "_" + timestamp + ".png";
-
-		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File dest = new File(filePath);
-		dest.getParentFile().mkdirs();
+		String testName = result.getName();
+		String screenshotPath = ScreenshotUtil.captureScreenshot(driver, testName);
+		String base64 = ScreenshotUtil.captureBase64Screenshot(driver);
 
 		try {
-			org.openqa.selenium.io.FileHandler.copy(src, dest);
-			test.fail(MediaEntityBuilder.createScreenCaptureFromPath(dest.getAbsolutePath()).build());
-		} catch (IOException e) {
+			test.fail("Failure Screenshot:").addScreenCaptureFromPath(screenshotPath)
+					.addScreenCaptureFromBase64String(base64);
+		} catch (Exception e) {
 			test.fail("Screenshot error: " + e.getMessage());
 		}
 	}

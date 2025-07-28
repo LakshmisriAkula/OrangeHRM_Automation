@@ -68,8 +68,11 @@ public class TestBase {
 		String testName = message.replace(" ", "_");
 		String path = ScreenshotUtil.captureScreenshot(driver, testName);
 
+		String base64 = ScreenshotUtil.captureBase64Screenshot(driver);
+
 		if (logger != null) {
-			logger.log(Status.INFO, message).addScreenCaptureFromPath(path);
+			logger.log(Status.INFO, message).addScreenCaptureFromPath(path) // For local view (optional)
+					.addScreenCaptureFromBase64String(base64); // For embedded view
 		} else {
 			System.out.println("⚠️ Logger is null. Screenshot saved at: " + path);
 		}

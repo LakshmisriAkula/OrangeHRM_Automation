@@ -50,6 +50,7 @@ public class ExtentTestListener implements ITestListener, ISuiteListener {
 	
 	@Override
 	public void onTestFailure(ITestResult result) {
+		
 	    test.fail("Test failed: " + result.getThrowable());
 
 	    WebDriver driver = TestBase.driver;
@@ -59,8 +60,12 @@ public class ExtentTestListener implements ITestListener, ISuiteListener {
 
 	    String filePath = ScreenshotUtil.captureScreenshot(driver, screenshotName);
 
-	    test.fail(MediaEntityBuilder.createScreenCaptureFromPath(filePath).build());
+	    String base64 = ScreenshotUtil.captureBase64Screenshot(driver);
+
+	    test.fail("Screenshot (Base64):")
+		    .addScreenCaptureFromBase64String(base64);
 	}
+	
 
 
 	

@@ -28,7 +28,7 @@ public class ScreenshotUtil {
 		return path;
 	}
 
-	public static String captureBase64Screenshot(WebDriver driver) {
-		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
-	}
 }
+
+
+

@@ -63,14 +63,22 @@ public class TestBase {
 
 	}
 
+	
 	protected void logWithScreenshot(String message) {
-		String path = ScreenshotUtil.captureScreenshot(driver, message.replace(" ", "_"));
+		String testName = message.replace(" ", "_");
+		String path = ScreenshotUtil.captureScreenshot(driver, testName);
+		String base64 = ScreenshotUtil.captureBase64Screenshot(driver);
+
 		if (logger != null) {
-			logger.log(Status.INFO, message).addScreenCaptureFromPath(path);
+			logger.log(Status.INFO, message)
+				  .addScreenCaptureFromPath(path)
+				  .addScreenCaptureFromBase64String(base64);
 		} else {
-			System.out.println("⚠️ Logger is null. Screenshot taken: " + path);
+			System.out.println("⚠️ Logger is null. Screenshot saved at: " + path);
 		}
 	}
+
+
 
 	@AfterMethod
 

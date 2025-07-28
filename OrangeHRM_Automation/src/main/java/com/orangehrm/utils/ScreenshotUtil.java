@@ -20,15 +20,15 @@ public class ScreenshotUtil {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		File dest = new File(path);
 		try {
+			// Files.copy(src.toPath(), dest.toPath());
 			FileHandler.copy(src, dest);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		return path;
 	}
-
-	public static String captureBase64Screenshot(WebDriver driver) {
-		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
-	}
-
+	
 }
+
+
+

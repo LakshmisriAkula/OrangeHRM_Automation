@@ -59,13 +59,7 @@ public class ExtentTestListener implements ITestListener, ISuiteListener {
 
 		String filePath = ScreenshotUtil.captureScreenshot(driver, screenshotName);
 
-		String base64 = ScreenshotUtil.captureBase64Screenshot(driver);
-
-		test.fail("📷 Inline preview:",
-				MediaEntityBuilder.createScreenCaptureFromBase64String("data:image/png;base64," + base64).build());
-
-		test.fail("📸 Screenshot attached (clickable PNG):",
-				MediaEntityBuilder.createScreenCaptureFromPath(filePath).build());
+		test.fail("📸 Screenshot on failure", MediaEntityBuilder.createScreenCaptureFromPath(filePath).build());
 
 	}
 

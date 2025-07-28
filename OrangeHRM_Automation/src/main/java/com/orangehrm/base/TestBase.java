@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.orangehrm.utils.ScreenshotUtil;
 
@@ -68,12 +69,12 @@ public class TestBase {
 		String testName = message.replace(" ", "_");
 		String path = ScreenshotUtil.captureScreenshot(driver, testName);
 
-		String base64 = ScreenshotUtil.captureBase64Screenshot(driver);
-		String base64Image = "data:image/png;base64," + base64;
-
 		if (logger != null) {
-			logger.log(Status.INFO, message).addScreenCaptureFromPath(path)
-					.addScreenCaptureFromBase64String(base64Image);
+			logger.log(Status.INFO, message);
+
+			logger.info("🖼️ Click to Open Screenshot",
+					MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+
 		} else {
 			System.out.println("⚠️ Logger is null. Screenshot saved at: " + path);
 		}

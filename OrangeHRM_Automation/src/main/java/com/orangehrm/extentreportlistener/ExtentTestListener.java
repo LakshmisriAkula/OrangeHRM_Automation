@@ -47,28 +47,27 @@ public class ExtentTestListener implements ITestListener, ISuiteListener {
 		test.pass("Test passed");
 	}
 
-	
 	@Override
 	public void onTestFailure(ITestResult result) {
-		
-	    test.fail("Test failed: " + result.getThrowable());
+		test.fail("Test failed: " + result.getThrowable());
 
-	    WebDriver driver = TestBase.driver;
+		WebDriver driver = TestBase.driver;
 
-	    String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-	    String screenshotName = result.getName() + "_" + timestamp;
+		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 
-	    String filePath = ScreenshotUtil.captureScreenshot(driver, screenshotName);
+		String screenshotName = result.getName() + "_" + timestamp;
 
-	    String base64 = ScreenshotUtil.captureBase64Screenshot(driver);
+		String filePath = ScreenshotUtil.captureScreenshot(driver, screenshotName);
 
-	    test.fail("Screenshot (Base64):")
-		    .addScreenCaptureFromBase64String(base64);
+		String base64 = ScreenshotUtil.captureBase64Screenshot(driver);
+
+		test.fail("📷 Inline preview:",
+				MediaEntityBuilder.createScreenCaptureFromBase64String("data:image/png;base64," + base64).build());
+
+		test.fail("📸 Screenshot attached (clickable PNG):",
+				MediaEntityBuilder.createScreenCaptureFromPath(filePath).build());
+
 	}
-	
-
-
-	
 
 	@Override
 	public void onTestSkipped(ITestResult result) {

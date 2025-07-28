@@ -69,10 +69,11 @@ public class TestBase {
 		String path = ScreenshotUtil.captureScreenshot(driver, testName);
 
 		String base64 = ScreenshotUtil.captureBase64Screenshot(driver);
+		String base64Image = "data:image/png;base64," + base64;
 
 		if (logger != null) {
-			logger.log(Status.INFO, message).addScreenCaptureFromPath(path) // For local view (optional)
-					.addScreenCaptureFromBase64String(base64); // For embedded view
+			logger.log(Status.INFO, message).addScreenCaptureFromPath(path)
+					.addScreenCaptureFromBase64String(base64Image);
 		} else {
 			System.out.println("⚠️ Logger is null. Screenshot saved at: " + path);
 		}

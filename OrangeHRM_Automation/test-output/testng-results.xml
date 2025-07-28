@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="9" passed="5" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-28T11:14:35 IST" name="OrangeHRM Suite" finished-at="2025-07-28T11:18:48 IST" duration-ms="253142">
+  <suite started-at="2025-07-28T11:37:49 IST" name="OrangeHRM Suite" finished-at="2025-07-28T11:41:41 IST" duration-ms="231067">
     <groups>
     </groups>
-    <test started-at="2025-07-28T11:14:35 IST" name="Login and Admin Tests" finished-at="2025-07-28T11:18:48 IST" duration-ms="253142">
+    <test started-at="2025-07-28T11:37:49 IST" name="Login and Admin Tests" finished-at="2025-07-28T11:41:41 IST" duration-ms="231067">
       <class name="com.orangehrm.testCases.LoginTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:14:36 IST" name="setUp" finished-at="2025-07-28T11:14:51 IST" duration-ms="14472" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:37:51 IST" name="setUp" finished-at="2025-07-28T11:37:59 IST" duration-ms="7679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTestCases(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:14:51 IST" name="loginTestCases" data-provider="LoginData" finished-at="2025-07-28T11:14:55 IST" duration-ms="4570" status="PASS">
+        <test-method signature="loginTestCases(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:37:59 IST" name="loginTestCases" data-provider="LoginData" finished-at="2025-07-28T11:38:04 IST" duration-ms="5137" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:14:55 IST" name="tearDown" finished-at="2025-07-28T11:14:56 IST" duration-ms="332" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:38:04 IST" name="tearDown" finished-at="2025-07-28T11:38:05 IST" duration-ms="583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:14:56 IST" name="setUp" finished-at="2025-07-28T11:15:00 IST" duration-ms="4554" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:38:05 IST" name="setUp" finished-at="2025-07-28T11:38:10 IST" duration-ms="5126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTestCases(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:15:00 IST" name="loginTestCases" data-provider="LoginData" finished-at="2025-07-28T11:15:22 IST" duration-ms="22024" status="FAIL">
+        <test-method signature="loginTestCases(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:38:10 IST" name="loginTestCases" data-provider="LoginData" finished-at="2025-07-28T11:38:32 IST" duration-ms="22251" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -56,9 +56,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1bbc15d2e94206540082a8f930dd36b8, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60468/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bbc15d2e94206540082a8f930dd36b8]]>
+Command: [5fceb39ecead78b06991d66baf32914a, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61046}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61046/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fceb39ecead78b06991d66baf32914a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='oxd-userdropdown-name']"}
@@ -67,9 +67,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1bbc15d2e94206540082a8f930dd36b8, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60468/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bbc15d2e94206540082a8f930dd36b8
+Command: [5fceb39ecead78b06991d66baf32914a, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61046}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61046/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fceb39ecead78b06991d66baf32914a
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -121,15 +121,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:15:22 IST" name="tearDown" finished-at="2025-07-28T11:15:23 IST" duration-ms="264" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:38:32 IST" name="tearDown" finished-at="2025-07-28T11:38:33 IST" duration-ms="286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:15:23 IST" name="setUp" finished-at="2025-07-28T11:15:27 IST" duration-ms="4624" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:38:33 IST" name="setUp" finished-at="2025-07-28T11:38:38 IST" duration-ms="5090" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTestCases(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:15:27 IST" name="loginTestCases" data-provider="LoginData" finished-at="2025-07-28T11:15:48 IST" duration-ms="20901" status="FAIL">
+        <test-method signature="loginTestCases(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:38:38 IST" name="loginTestCases" data-provider="LoginData" finished-at="2025-07-28T11:38:59 IST" duration-ms="21596" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -150,9 +150,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1972caad0016ec336586f68cc8dc73c6, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60502}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60502/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1972caad0016ec336586f68cc8dc73c6]]>
+Command: [7242fea768221a627ab3e2bf9906e03e, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61096}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61096/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7242fea768221a627ab3e2bf9906e03e]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='oxd-userdropdown-name']"}
@@ -161,9 +161,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1972caad0016ec336586f68cc8dc73c6, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60502}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60502/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1972caad0016ec336586f68cc8dc73c6
+Command: [7242fea768221a627ab3e2bf9906e03e, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61096}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61096/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7242fea768221a627ab3e2bf9906e03e
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -215,15 +215,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:15:48 IST" name="tearDown" finished-at="2025-07-28T11:15:49 IST" duration-ms="369" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:39:00 IST" name="tearDown" finished-at="2025-07-28T11:39:00 IST" duration-ms="324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:15:49 IST" name="setUp" finished-at="2025-07-28T11:15:54 IST" duration-ms="5265" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:39:00 IST" name="setUp" finished-at="2025-07-28T11:39:05 IST" duration-ms="5093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTestCases(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:15:54 IST" name="loginTestCases" data-provider="LoginData" finished-at="2025-07-28T11:16:18 IST" duration-ms="23747" status="FAIL">
+        <test-method signature="loginTestCases(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:39:05 IST" name="loginTestCases" data-provider="LoginData" finished-at="2025-07-28T11:39:27 IST" duration-ms="21843" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -244,9 +244,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [066d47bf6dba84cab0ba3be8bc610ac9, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60530/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 066d47bf6dba84cab0ba3be8bc610ac9]]>
+Command: [10a2fc967fab41e2482124f88e3cfdb9, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61132}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61132/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 10a2fc967fab41e2482124f88e3cfdb9]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='oxd-userdropdown-name']"}
@@ -255,9 +255,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [066d47bf6dba84cab0ba3be8bc610ac9, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60530/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 066d47bf6dba84cab0ba3be8bc610ac9
+Command: [10a2fc967fab41e2482124f88e3cfdb9, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61132}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61132/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 10a2fc967fab41e2482124f88e3cfdb9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -309,15 +309,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:16:18 IST" name="tearDown" finished-at="2025-07-28T11:16:19 IST" duration-ms="545" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:39:27 IST" name="tearDown" finished-at="2025-07-28T11:39:28 IST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:16:19 IST" name="setUp" finished-at="2025-07-28T11:16:31 IST" duration-ms="12013" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:39:28 IST" name="setUp" finished-at="2025-07-28T11:39:32 IST" duration-ms="4786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTestCases(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:16:31 IST" name="loginTestCases" data-provider="LoginData" finished-at="2025-07-28T11:16:54 IST" duration-ms="23066" status="FAIL">
+        <test-method signature="loginTestCases(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:39:32 IST" name="loginTestCases" data-provider="LoginData" finished-at="2025-07-28T11:39:54 IST" duration-ms="22088" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -338,9 +338,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [28daf3802b8fd4bbe14ad917d2116d4b, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60572}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60572/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 28daf3802b8fd4bbe14ad917d2116d4b]]>
+Command: [3c263a5a78ddf0484235ea7ed66d5837, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61163/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c263a5a78ddf0484235ea7ed66d5837]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='oxd-userdropdown-name']"}
@@ -349,9 +349,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.32.0', revision: 'd17c8aa950'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [28daf3802b8fd4bbe14ad917d2116d4b, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60572}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60572/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 28daf3802b8fd4bbe14ad917d2116d4b
+Command: [3c263a5a78ddf0484235ea7ed66d5837, findElement {using=xpath, value=//p[@class='oxd-userdropdown-name']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.159, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\LAKSHM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61163}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61163/devtoo..., se:cdpVersion: 138.0.7204.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c263a5a78ddf0484235ea7ed66d5837
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -403,57 +403,57 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestCases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:16:55 IST" name="tearDown" finished-at="2025-07-28T11:17:01 IST" duration-ms="6014" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.LoginTests@5e0826e7]" started-at="2025-07-28T11:39:55 IST" name="tearDown" finished-at="2025-07-28T11:39:55 IST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.testCases.LoginTests -->
       <class name="com.orangehrm.testCases.AdminTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:17:01 IST" name="setup" finished-at="2025-07-28T11:17:12 IST" duration-ms="11026" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:39:55 IST" name="setup" finished-at="2025-07-28T11:40:02 IST" duration-ms="6517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyMenuCount()[pri:1, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:17:12 IST" name="verifyMenuCount" finished-at="2025-07-28T11:17:16 IST" duration-ms="3980" status="PASS">
+        <test-method signature="verifyMenuCount()[pri:1, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:40:02 IST" name="verifyMenuCount" finished-at="2025-07-28T11:40:05 IST" duration-ms="2984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMenuCount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:17:16 IST" name="tearDown" finished-at="2025-07-28T11:17:17 IST" duration-ms="547" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:40:05 IST" name="tearDown" finished-at="2025-07-28T11:40:05 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:17:17 IST" name="setup" finished-at="2025-07-28T11:17:22 IST" duration-ms="5116" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:40:05 IST" name="setup" finished-at="2025-07-28T11:40:13 IST" duration-ms="7300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchByUsername()[pri:2, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:17:22 IST" name="searchByUsername" finished-at="2025-07-28T11:17:39 IST" duration-ms="16675" status="PASS">
+        <test-method signature="searchByUsername()[pri:2, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:40:13 IST" name="searchByUsername" finished-at="2025-07-28T11:40:21 IST" duration-ms="8305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:17:39 IST" name="tearDown" finished-at="2025-07-28T11:17:39 IST" duration-ms="357" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:40:21 IST" name="tearDown" finished-at="2025-07-28T11:40:22 IST" duration-ms="1063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:17:39 IST" name="setup" finished-at="2025-07-28T11:17:55 IST" duration-ms="15646" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:40:22 IST" name="setup" finished-at="2025-07-28T11:40:50 IST" duration-ms="28188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchByUserRole()[pri:3, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:17:55 IST" name="searchByUserRole" finished-at="2025-07-28T11:18:05 IST" duration-ms="10365" status="PASS">
+        <test-method signature="searchByUserRole()[pri:3, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:40:50 IST" name="searchByUserRole" finished-at="2025-07-28T11:41:02 IST" duration-ms="12257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByUserRole -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:18:05 IST" name="tearDown" finished-at="2025-07-28T11:18:08 IST" duration-ms="3560" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:41:02 IST" name="tearDown" finished-at="2025-07-28T11:41:03 IST" duration-ms="704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:18:08 IST" name="setup" finished-at="2025-07-28T11:18:23 IST" duration-ms="14389" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:41:03 IST" name="setup" finished-at="2025-07-28T11:41:11 IST" duration-ms="8146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchByStatus()[pri:4, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:18:23 IST" name="searchByStatus" finished-at="2025-07-28T11:18:38 IST" duration-ms="15071" status="PASS">
+        <test-method signature="searchByStatus()[pri:4, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:41:11 IST" name="searchByStatus" finished-at="2025-07-28T11:41:40 IST" duration-ms="28448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchByStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:18:38 IST" name="tearDown" finished-at="2025-07-28T11:18:48 IST" duration-ms="10157" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testCases.AdminTests@5c5eefef]" started-at="2025-07-28T11:41:40 IST" name="tearDown" finished-at="2025-07-28T11:41:41 IST" duration-ms="789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

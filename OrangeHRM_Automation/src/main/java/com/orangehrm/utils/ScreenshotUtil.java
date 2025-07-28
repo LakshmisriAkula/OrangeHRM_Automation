@@ -15,18 +15,23 @@ public class ScreenshotUtil {
 
 	public static String captureScreenshot(WebDriver driver, String testName) {
 		String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
-		String path = "screenshots/" + testName + "_" + timestamp + ".png";
+
+		// Save under test-output/screenshots/
+		String folderPath = "test-output/screenshots/";
+		new File(folderPath).mkdirs(); // Ensure folder exists
+
+		String relativePath = folderPath + testName + "_" + timestamp + ".png";
 
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		File dest = new File(path);
+		File dest = new File(relativePath);
 		try {
-			// Files.copy(src.toPath(), dest.toPath());
 			FileHandler.copy(src, dest);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return path;
+		return relativePath; // Relative path for ExtentReports
 	}
+
 	
 }
 

@@ -77,6 +77,9 @@ Right-click on testng.xml → Run As → TestNG Suite
 - Screenshots are saved in `/Screenshots` folder
 - Extent Report is generated as `ExtentReport.html` in the project root directory
 
+## 📌 Note for Reviewers
+
+This project is submitted as a capstone assignment for the Automation Testing course. It demonstrates practical use of POM, data-driven testing, and reporting. Test results include both passed and failed scenarios to showcase failure handling and debugging capabilities via screenshots and logs.
 
 ## 🙋‍♀️ Author
 **Lakshmi Akula**  

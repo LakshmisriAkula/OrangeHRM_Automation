@@ -1,6 +1,5 @@
 package com.orangehrm.extentreportlistener;
 
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

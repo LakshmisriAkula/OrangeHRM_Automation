@@ -82,11 +82,17 @@ Right-click on testng.xml → Run As → TestNG Suite
 This project is submitted as a capstone assignment for the Automation Testing course. It demonstrates practical use of POM, data-driven testing, and reporting. Test results include both passed and failed scenarios to showcase failure handling and debugging capabilities via screenshots and logs.
 
 ## 🙋‍♀️ Author
+
 **Lakshmi Akula**  
-Automation Tester | 8+ Years QA Experience including 4 years Selenium Automation
-[GitHub](https://github.com/LakshmisriAkula)
+Automation Tester | 8+ Years QA Experience (Manual & 4+ Years Selenium Automation)  
+🌐 [GitHub](https://github.com/LakshmisriAkula)  
+🔗 [LinkedIn](https://www.linkedin.com/in/lakshmisri-akula-b78232130/)
 
 ---
 
 ## 📬 Contact
-If you have any queries, feel free to reach out via GitHub Issues or [LinkedIn](https://www.linkedin.com/in/lakshmisri-akula-b78232130/).
+
+If you have any questions or feedback, feel free to reach out via:
+- GitHub Issues  
+- LinkedIn Messaging  
+- Email (akulalakshmisri@gmail.com)

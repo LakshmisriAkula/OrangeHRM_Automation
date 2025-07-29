@@ -20,40 +20,37 @@ public class AdminTests extends TestBase {
 		login = new LoginPage(driver);
 		adminPage = new AdminPage(driver);
 		login.login("Admin", "admin123");
+		adminPage.adminMenu.click();
+
 	}
 
-
-	@Test(priority=1)
+	@Test(priority = 1)
 	public void verifyMenuCount() {
 		System.out.println(adminPage.getMenuOptionsCount());
 		Assert.assertEquals(adminPage.getMenuOptionsCount(), 12);
-		adminPage.adminMenu.click();
 	}
 
-	@Test(priority=2)
+	@Test(priority = 2)
 	public void searchByUsername() throws InterruptedException {
-
-		adminPage.adminMenu.click();
 
 		int result = adminPage.searchByUserName("Admin");
 
 		logWithScreenshot("Records found by searching with user name - Admin");
 
 		System.out.println("Result by searching with username " + result);
-		
+
 		Assert.assertEquals(result, adminPage.getDisplayedRecordCountFromText());
 
 		adminPage.refreshPage();
 	}
-	@Test(priority=3)
+
+	@Test(priority = 3)
 	public void searchByUserRole() throws InterruptedException {
-		
-		adminPage.adminMenu.click();
-		
+
 		int result = adminPage.searchByUserRole("Admin");
-		
+
 		logWithScreenshot("Records found by searching with role- Admin");
-		
+
 		System.out.println("Result by searching with user role " + result);
 
 		Assert.assertEquals(result, adminPage.getDisplayedRecordCountFromText());
@@ -61,17 +58,15 @@ public class AdminTests extends TestBase {
 		adminPage.refreshPage();
 	}
 
-	@Test(priority=4)
+	@Test(priority = 4)
 	public void searchByStatus() throws InterruptedException {
-		
-		adminPage.adminMenu.click();
-		
+
 		int result = adminPage.searchByUserStatus("Enabled");
-		
+
 		logWithScreenshot("Records found by searching with status- Enabled");
-		
+
 		System.out.println("Result by searching with status " + result);
-		
+
 		Assert.assertEquals(result, adminPage.getDisplayedRecordCountFromText());
 
 		adminPage.refreshPage();

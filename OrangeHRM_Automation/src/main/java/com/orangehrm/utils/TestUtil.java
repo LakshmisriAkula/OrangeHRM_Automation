@@ -34,16 +34,15 @@ public class TestUtil extends TestBase {
 		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
 		System.out.println(sheet.getLastRowNum());
 
-		// Loop through rows and cells
 		for (int i = 0; i < sheet.getLastRowNum(); i++) {
-			row = sheet.getRow(i + 1); // i + 1 to skip header row
-			if (row != null) { // Check if the row is not null
+			row = sheet.getRow(i + 1);
+			if (row != null) {
 				for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
-					cell = row.getCell(k); // Get the cell
-					if (cell != null) { // Check if the cell is not null
-						data[i][k] = cell.toString(); // Safe to call toString()
+					cell = row.getCell(k);
+					if (cell != null) {
+						data[i][k] = cell.toString();
 					} else {
-						data[i][k] = ""; // Assign empty string or default value for null cells
+						data[i][k] = "";
 					}
 				}
 			}

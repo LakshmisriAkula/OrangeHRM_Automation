@@ -29,9 +29,9 @@ public class LoginTests extends TestBase {
 
 		loginPage.login(username, password);
 
-		Assert.assertTrue(loginPage.isProfileDisplayed(), "Profile is not displayed after login");
+		Assert.assertTrue(loginPage.isProfileDisplayed(), "Profile is not displayed after login due to invalid credentials.");
 
-		logWithScreenshot("Dashboard page captured successfully"); // if test fails capturing the screenshot in ExtentTestListener
+		logWithScreenshot("Dashboard page captured successfully");
 
 		loginPage.logout();
 

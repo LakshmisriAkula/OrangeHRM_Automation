@@ -72,8 +72,7 @@ public class TestBase {
 		if (logger != null) {
 			logger.log(Status.INFO, message);
 
-			logger.info("🖼️ Click to Open Screenshot",
-					MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+			logger.info("🖼️ Click to Open Screenshot", MediaEntityBuilder.createScreenCaptureFromPath(path).build());
 
 		} else {
 			System.out.println("⚠️ Logger is null. Screenshot saved at: " + path);

@@ -54,39 +54,36 @@ Automate the following modules of the OrangeHRM application:
 ├── ExtentReport.html # Generated Extent Report
 └── README.md # Project documentation  ```
 
-**## 🚀 How to Run the Tests**
+## 🚀 How to Run the Tests
 
-**### 1. Clone the Repository
-**git clone https://github.com/LakshmisriAkula/OrangeHRM_Automation.git
+### 1. Clone the Repository
+git clone https://github.com/LakshmisriAkula/OrangeHRM_Automation.git
 cd OrangeHRM_Automation
 
 
-**### 2. Open in IDE (Eclipse/IntelliJ)
-**
-**### 3. Install Dependencies
-**Ensure Maven is installed and run:
+### 2. Open in IDE (Eclipse/IntelliJ)
+
+### 3. Install Dependencies
+Ensure Maven is installed and run:
 mvn clean install
 
 
-**### 4. Run Tests
-**Use the TestNG XML file:
+### 4. Run Tests
+Use the TestNG XML file:
 Right-click on testng.xml → Run As → TestNG Suite
 
 
-**## 📷 Sample Output
-**
+## 📷 Sample Output
 - Screenshots are saved in `/Screenshots` folder
 - Extent Report is generated as `ExtentReport.html` in the project root directory
 
 
-**## 🙋‍♀️ Author
-**
+## 🙋‍♀️ Author
 **Lakshmi Akula**  
 Automation Tester | 8+ Years QA Experience including 4 years Selenium Automation
 [GitHub](https://github.com/LakshmisriAkula)
 
 ---
 
-**## 📬 Contact
-**
+## 📬 Contact
 If you have any queries, feel free to reach out via GitHub Issues or [LinkedIn](https://www.linkedin.com/in/lakshmisri-akula-b78232130/).

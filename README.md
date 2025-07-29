@@ -35,14 +35,24 @@ Automate the following modules of the OrangeHRM application:
  ## 📂 Project Structure 
  
  ``` OrangeHRM_Automation/
+│
 ├── src/
-│   ├── pages/         # POM classes for each module
-│   ├── testcases/     # Test classes
-│   ├── utilities/     # Excel, Screenshot, Report Utils
-│   └── testng.xml     # TestNG configuration
-├── reports/           # ExtentReports output
-├── screenshots/       # Captured screenshots
-└── README.md  ```
+│ ├── main/java/
+│ │ ├── com.orangehrm.base/ # Base classes like TestBase
+│ │ ├── com.orangehrm.config/ # Configuration files (e.g., config.properties)
+│ │ ├── com.orangehrm.extentreportlistener/ # Custom Extent Report Listener
+│ │ ├── com.orangehrm.pages/ # Page Object Model classes (AdminPage, LoginPage)
+│ │ ├── com.orangehrm.testdata/ # Test data (e.g., LoginData.xlsx)
+│ │ └── com.orangehrm.utils/ # Utility classes (Screenshot, Test utilities)
+│ │
+│ └── test/java/
+│ └── com.orangehrm.testCases/ # TestNG test cases (AdminTests, LoginTests)
+│
+├── Screenshots/ # Captured screenshots from failed/passed tests
+├── testng.xml # TestNG configuration file
+├── pom.xml # Maven Project Object Model
+├── ExtentReport.html # Generated Extent Report
+└── README.md # Project documentation  ```
 
 ## 🚀 How to Run the Tests
 
@@ -56,20 +66,18 @@ cd OrangeHRM_Automation
 
 ### 3. Install Dependencies
 Ensure Maven is installed and run:
-
 mvn clean install
 
 
 ### 4. Run Tests
 Use the TestNG XML file:
-
 Right-click on testng.xml → Run As → TestNG Suite
 
 
 ## 📷 Sample Output
 
-- Screenshots saved in `/screenshots`
-- Reports generated in `/reports`
+- Screenshots are saved in `/Screenshots` folder
+- Extent Report is generated as `ExtentReport.html` in the project root directory
 
 
 ## 🙋‍♀️ Author
